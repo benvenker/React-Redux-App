@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
 import { fetchActivity } from "../store/actions/activityActions";
 
 const BoredActivities = (props) => {
@@ -9,7 +9,11 @@ const BoredActivities = (props) => {
       type: "",
     });
   }, []);
-  return <h1>Bored? Why not try...</h1>;
+  return (
+    <div>
+      <h1>Bored? Why not try...</h1>
+    </div>
+  );
 };
 
 const mapStateToProps = (state) => {
