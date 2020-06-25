@@ -23,6 +23,6 @@ export const fetchActivity = () => {
 
 export const updateActivity = (newActivity) => {
   return (dispatch) => {
-    dispatch({ type: "FETCH_ACTIVITY_COMPLETE" });
+    dispatch({ type: "FETCH_ACTIVITY_START" });
   };
 };
